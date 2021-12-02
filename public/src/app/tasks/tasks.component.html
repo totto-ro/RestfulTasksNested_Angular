@@ -29,17 +29,11 @@
     </form>
 </div>
 
+
 <h1>Display all the Tasks</h1>
 
-<ul *ngIf="showingTask" class="box">
-    <li>
-            <h1>Show task detail:</h1>
-            <h3>Task by ID: {{ taskById._id }}</h3>
-            <p>Title: {{ taskById.title }}</p>
-            <p>Description: {{ taskById.description }}</p>
-            <p>Completed: {{ taskById.completed }}</p>
-    </li>
-</ul> 
+<app-show-item *ngIf="showingTask" [showItem] = 'taskById'></app-show-item>
+
 
 <div *ngIf="editOneTask" class="box">
     <h1>Edit {{taskById.title}} task:</h1>

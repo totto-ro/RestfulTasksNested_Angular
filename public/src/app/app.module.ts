@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { TasksComponent } from './tasks/tasks.component';
 
 import { TaskService } from './tasks/task.service';
+import { ShowItemComponent } from './show-item/show-item.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TasksComponent,
+    ShowItemComponent,
 
   ],
   imports: [

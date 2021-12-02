@@ -73,15 +73,6 @@ export class TasksComponent implements OnInit {
     this.oneTask(id);
     this.editOneTask=true;
   }
-  /*
-  updateOneTask(event:any):void{
-
-    let observable = this._taskService.updateTask( this.taskById, this.editTask )
-    console.log("look",this.taskById);
-    observable.subscribe( (data:any ) => {
-      console.log(data);
-    })
-  }*/
 
   updateOneTask(event:any):void{
     let observable = this._taskService.updateTask(this.taskById._id, this.editTask)
